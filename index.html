@@ -26,6 +26,7 @@
       justify-content: center;
       min-height: 100vh;
       min-width: 100vw;
+      gap: 30px;
     }
 
     .image-placeholder {
@@ -39,17 +40,35 @@
       font-family: sans-serif;
       font-size: 1rem;
     }
-    @media (max-width: 768px) {
-      .image-placeholder {
-        width: 30%;
-        height: 30%;
-      }
-    }
+
     .image-placeholder img {
-      transition: transform 0.3s ease
+      max-width: 100%;
+      max-height: 100%;
+      transition: transform 0.3s ease;
     }
+
     .image-placeholder img:hover {
       transform: scale(1.1);
+    }
+
+    /* Mobile */
+    @media (max-width: 1024px) {
+      body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        gap: 20px;
+      }
+
+      .image-placeholder {
+        width: 60%;
+        height: auto;
+      }
+
+      .fb-page {
+        width: 340px;
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -57,5 +76,7 @@
   <a href="https://www.facebook.com/lowfactorsquad" target="_blank" class="image-placeholder">
     <img height="100%" src="lowfactoracademy.jpg" alt="Low Factor Academy">
   </a>
+
+  <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/lowfactorsquad" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=766&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Flowfactorsquad&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline"><span style="vertical-align: bottom; width: 340px; height: 500px;"><iframe name="f5aee5bd42dbd2f4d" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v21.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfc2948bd8a5b1a704%26domain%3Ddevelopers.facebook.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff90f16776d9ec993b%26relation%3Dparent.parent&amp;container_width=766&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Flowfactorsquad&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: visible; width: 340px; height: 500px;" class=""></iframe></span></div>
 </body>
 </html>
